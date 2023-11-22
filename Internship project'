@@ -1,0 +1,7 @@
+import cv2
+import numpy as np
+import webbrowser
+#To load yolo
+net = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
+layer_names = net.getUnconnectedOutLayersNames()
+
